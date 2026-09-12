@@ -1,0 +1,109 @@
+{
+  "model": "GradientBoostingRegressor",
+  "features": [
+    "recent_growth_g_l_day",
+    "ph",
+    "temperature_C",
+    "dissolved_oxygen_mg_L",
+    "water_depth_m",
+    "culture_age_days",
+    "horizon_days"
+  ],
+  "evaluation": {
+    "n": 1065,
+    "mae_g_l": 0.056595322019684,
+    "rmse_g_l": 0.07813354400904689,
+    "r2": 0.47214428950192333,
+    "persistence_mae_g_l": 0.1155680751173709
+  },
+  "per_horizon": {
+    "1": {
+      "n": 248,
+      "mae_g_l": 0.030116572080888457,
+      "persistence_mae_g_l": 0.04298387096774194,
+      "r2": 0.845322486033063
+    },
+    "2": {
+      "n": 285,
+      "mae_g_l": 0.04125222964861009,
+      "persistence_mae_g_l": 0.07926315789473683,
+      "r2": 0.710094371103044
+    },
+    "3": {
+      "n": 179,
+      "mae_g_l": 0.052884255143902305,
+      "persistence_mae_g_l": 0.11134078212290503,
+      "r2": 0.6212326936126589
+    },
+    "4": {
+      "n": 99,
+      "mae_g_l": 0.08163929235724866,
+      "persistence_mae_g_l": 0.16474747474747473,
+      "r2": 0.035170860413657246
+    },
+    "5": {
+      "n": 127,
+      "mae_g_l": 0.0868552804238194,
+      "persistence_mae_g_l": 0.18496062992125983,
+      "r2": 0.12874956871907872
+    },
+    "6": {
+      "n": 36,
+      "mae_g_l": 0.07679642898597518,
+      "persistence_mae_g_l": 0.26111111111111107,
+      "r2": 0.15797028337711683
+    },
+    "7": {
+      "n": 91,
+      "mae_g_l": 0.10664130718245,
+      "persistence_mae_g_l": 0.22747252747252747,
+      "r2": -0.7962534674933595
+    }
+  },
+  "split": {
+    "train_campaigns": [
+      "OCT172013",
+      "APR032014",
+      "JUN112014",
+      "JUL252014",
+      "SEP102014",
+      "OCT222014",
+      "DEC162014",
+      "JAN292015",
+      "MAR122015"
+    ],
+    "test_campaigns": [
+      "MAY052015",
+      "JUN172015"
+    ],
+    "train_rows": 5168,
+    "test_rows": 1065
+  },
+  "data_audit": {
+    "eligible_pairs": 6233,
+    "eligible_runs": 403,
+    "campaigns": 11,
+    "pairs_by_horizon": {
+      "1": 659,
+      "2": 1594,
+      "3": 1022,
+      "4": 694,
+      "5": 991,
+      "6": 291,
+      "7": 982
+    },
+    "pairs_excluded_for_harvest_or_crash": 10301,
+    "feature_missing_fraction": {
+      "recent_growth_g_l_day": 0.2847745868763035,
+      "ph": 0.013476656505695492,
+      "temperature_C": 0.042836515321674956,
+      "dissolved_oxygen_mg_L": 0.055671426279480185,
+      "water_depth_m": 0.1084549975934542,
+      "culture_age_days": 0.0,
+      "horizon_days": 0.0
+    },
+    "date_min": "2013-10-17",
+    "date_max": "2015-07-26"
+  },
+  "note": "Metrics come from the two latest held-out ATP3 experiment campaigns. The saved deployment model is then refit on all available ATP3 pairs."
+}

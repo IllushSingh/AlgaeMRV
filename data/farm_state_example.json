@@ -1,0 +1,12 @@
+{
+  "date": "2026-08-07",
+  "state": {
+    "biomass_g_l": 0.62,
+    "recent_growth_g_l_day": 0.035,
+    "ph": 7.5,
+    "temperature_C": 27.8,
+    "dissolved_oxygen_mg_L": 6.7,
+    "water_depth_m": 0.3,
+    "culture_age_days": 6
+  }
+}

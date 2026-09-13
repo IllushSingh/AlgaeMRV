@@ -37,7 +37,7 @@ verification record plus JSON and CSV exports).
 Requires Python 3.9 or newer.
 
 ```bash
-git clone https://github.com/<IllushSingh>/AlgaeMRV.git
+git clone https://github.com/IllushSingh/AlgaeMRV.git
 cd AlgaeMRV
 
 python -m venv .venv
